@@ -274,8 +274,22 @@ img, svg{
 
 /* TO DO: Add selectors and styles below for the paragraph and link in the padding box demo section */
 
-    /* the style below is included for you to add the link in the padding demo section */
-    /* transition: background-color 500ms; */
+/* Part 6 - Paragraph: 16px top and bottom padding only */
+#padding section p {
+    padding: 16px 0;
+}
+
+/* Part 6 - Link styles */
+#padding section a {
+    background-color: var(--green);   /* use CSS variable for background */
+    padding: 16px;                    /* 16px padding on all sides */
+    display: block;                   /* block display */
+    font-size: 1.2rem;                /* font size */
+    text-decoration: none;            /* remove underline */
+    width: fit-content;               /* width fits content */
+    margin: 16px auto;                /* center with auto left/right, 16px top/bottom */
+    transition: background-color 500ms;
+}
 
 #padding a:hover{
     background-color: var(--blue);
@@ -301,13 +315,13 @@ img, svg{
     margin-bottom: 16px;
 }
 
-/* TO DO: add the styles below one at a time, then save the file and refresh the page in the browser to see the changes */
+/* Part 7 - Border paragraph styles */
 #border section p:last-of-type{
-    /* set background color to the dark gray variable */
-    /* set text color to the white variable */
-    /* add 1rem of padding to all sides */
-    /* add a 4px solid yellow border (use the variable for the color) */
-    
+    background-color: var(--dk-gray);     /* dark gray background */
+    color: var(--wht);                    /* white text */
+    padding: 1rem;                        /* 1rem padding all sides */
+    border: 4px solid var(--yellow);      /* 4px solid yellow border */
+
     width: calc(100% - 32px);
     max-width: calc(65ch - 32px);
 }
@@ -328,7 +342,7 @@ img, svg{
     text-decoration: 4px solid underline var(--red);
 }
 
-/* TO DO: add styles here for spacing elements with margin */
+/* Part 8 - Spacing with margin */
 .spacing{
     background-color: var(--med-gray);
     color: var(--wht);
@@ -336,9 +350,10 @@ img, svg{
     border: 4px solid var(--blk);
     width: calc(100% - 40px);
     max-width: calc(65ch - 40px);
+    margin: 16px auto;   /* 16px top/bottom, auto left/right */
 }
 
-/* TO DO: use margin here for centering */
+/* Part 8 - Center image with margin */
 .center{
     display: block;
     background-color: var(--dk-gray);
@@ -347,6 +362,7 @@ img, svg{
     height: auto;
     max-width: calc(334px - 40px);
     border: 4px solid var(--green);
+    margin: 16px auto;   /* 16px top/bottom, auto left/right centers it */
 }
 
 /* RESOURCE SECTION STYLES */
